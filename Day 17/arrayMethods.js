@@ -13,9 +13,7 @@ const filarr = items.filter((item) => {
 console.log(filarr);
 
 // Map
-const maparr = items.map((item) => {
-  return item.name;
-});
+const maparr = items.map((item) => (item.price === 10 ? 1000 : 10));
 console.log(maparr);
 
 // Find
